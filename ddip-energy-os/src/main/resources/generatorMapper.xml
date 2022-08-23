@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<!-- 指定连接数据库的JDBC驱动包所在位置，指定到你本机的完整路径 -->
+  	<classPathEntry  
+  		location="D:\zxy\Maven\m2\repository\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar" />  
+  		
+  		
+		
+   <context id="example"
+             targetRuntime="MyBatis3Simple"
+             defaultModelType="flat">
+
+				<!-- 生成的Java文件的编码 -->
+		<property name="javaFileEncoding" value="UTF-8" />
+		
+		<!-- 格式化java代码 -->
+		<property name="javaFormatter"
+			value="org.mybatis.generator.api.dom.DefaultJavaFormatter" />
+			
+		<!-- JavaBean 实现 序列化 接口 -->
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		
+		<!-- genenat entity时,生成toString -->
+<!-- 		<plugin type="org.mybatis.generator.plugins.ToStringPlugin" /> -->
+
+      	<commentGenerator type="com.edison.CommentGenerator">
+                    <property name="author" value="wd"/>
+                    <property name="allArgsConstructor" value="true"/>
+                    <property name="noArgsConstructor" value="true"/>
+                    <property name="toString" value="false"/>
+                    <property name="builder.toBuilder" value="false"/>
+                    <property name="builder" value="false"/>
+         </commentGenerator>
+         
+        
+		
+		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+		<jdbcConnection 
+			driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1:3306/energyOS?characterEncoding=utf-8"
+			userId="root" password="root" />
+			
+		<!-- 默认情况下数据库中的 decimal，bigInt 在 Java 对应是 sql 下的 BigDecimal 类 -->
+        <!-- 不是 double 和 long 类型 -->
+        <!-- 使用常用的基本类型代替 sql 包下的引用类型 -->
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		
+		<!--生成Entity类存放位置 -->
+		<javaModelGenerator targetPackage="com.ddip.pojo.entity" targetProject="src/main/java">
+   			<property name="enableSubPackages" value="false" />
+            <property name="trimStrings" value="false" />
+		</javaModelGenerator>
+		
+		<!--生成映射文件存放位置 -->
+		<sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+		    <!-- 针对数据库的一个配置，是否把 schema 作为字包名 -->
+            <property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+		
+		<!--生成Dao类存放位置(Mapper) -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.ddip.dao" targetProject="src/main/java">
+			<!-- 针对数据库的一个配置，是否把 schema 作为字包名 -->
+            <property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<!--生成对应表及类名 -->
+		<table tableName="ddip_dictionary_data" domainObjectName="DdipDictionaryData"  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+               
+        		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+               
+                       		<table tableName="" domainObjectName=""  
+			   enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false" 
+               enableSelectByExample="false" 
+               selectByExampleQueryId="false" />
+ 	</context>
+</generatorConfiguration>
